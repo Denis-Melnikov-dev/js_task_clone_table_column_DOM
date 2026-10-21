@@ -7,5 +7,5 @@ for (const row of allRows) {
   const rowArray = Array.from(row.children);
   const cellCopy = rowArray[1].cloneNode(true);
 
-  row.insertBefore(cellCopy, rowArray[4]);
+  row.insertBefore(cellCopy, rowArray[rowArray.length - 1]);
 }
